@@ -1,0 +1,9 @@
+/usr/local/lib/cmake/srig/srigConfig.cmake
+/usr/local/include/srig/api.h
+/usr/local/lib/python2.7/dist-packages/srig/__init__.py
+/usr/local/lib/python2.7/dist-packages/srig/srig_py.py
+/usr/local/lib/python2.7/dist-packages/srig/__init__.pyc
+/usr/local/lib/python2.7/dist-packages/srig/srig_py.pyc
+/usr/local/lib/python2.7/dist-packages/srig/__init__.pyo
+/usr/local/lib/python2.7/dist-packages/srig/srig_py.pyo
+/usr/share/gnuradio/grc/blocks/srig_srig_py.xml

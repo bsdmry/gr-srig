@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<block>
+  <name>Serial Rig</name>
+  <key>srig_srig_py</key>
+  <category>Device control</category>
+  <import>import srig</import>
+  <make>srig.srig_py($serialPort, $pin0, $pin1, $pin2, $pin3)</make>
+  <callback>set_pin0($pin0)</callback>
+  <callback>set_pin1($pin1)</callback>
+  <callback>set_pin2($pin2)</callback>
+  <callback>set_pin3($pin3)</callback>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Device name</name>
+    <key>serialPort</key>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Pin 0</name>
+    <key>pin0</key>
+    <type>bool</type>
+  </param>
+  <param>
+    <name>Pin 1</name>
+    <key>pin1</key>
+    <type>bool</type>
+  </param>
+  <param>
+    <name>Pin 2</name>
+    <key>pin2</key>
+    <type>bool</type>
+  </param>
+  <param>
+    <name>Pin 3</name>
+    <key>pin3</key>
+    <type>bool</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+</block>
